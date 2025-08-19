@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "name": "Copilot X",
+    "slug": "copilot-x",
+    "image": "/images/copilotX.png",
+    "shortDescription": "Next-gen AI pair programmer built on GPT-4 Turbo.",
+    "description": "Copilot X brings AI-assisted code generation, refactoring, and contextual debugging directly into your IDE. It supports voice commands, test generation, and deep integration with GitHub repositories.",
+    "website": "https://github.com/features/copilot",
+    "features": [
+      "GPT-4 Turbo powered AI pair programming",
+      "Contextual code completions across multiple languages",
+      "Voice command support for hands-free coding",
+      "Test case generation and debugging assistance",
+      "Deep integration with GitHub repositories"
+    ],
+    "useCases": [
+      "Speeding up code writing with smart AI completions",
+      "Refactoring legacy codebases with AI suggestions",
+      "Generating unit tests and integration tests",
+      "Debugging errors with AI-powered explanations",
+      "Using voice commands for accessibility and faster workflow"
+    ],
+    "pros": [
+      "Seamless GitHub integration",
+      "Improves developer productivity",
+      "Context-aware completions"
+    ],
+    "cons": [
+      "Works best with GitHub ecosystem",
+      "Subscription required for advanced features"
+    ],
+    "seo": {
+      "title": "GitHub Copilot X – AI Pair Programmer with GPT-4",
+      "keywords": [
+        "Copilot X",
+        "GitHub Copilot",
+        "AI pair programmer",
+        "AI coding assistant",
+        "GPT-4 code generation"
+      ],
+      "metaDescription": "Explore GitHub Copilot X – the next-gen AI coding assistant powered by GPT-4 Turbo. Learn how it helps developers write, refactor, and debug code faster."
+    }
+  },
+  {
+    "id": 2,
+    "name": "Tabnine",
+    "slug": "tabnine",
+    "image": "/images/tabnine.png",
+    "shortDescription": "AI-powered code completion with multi-language support.",
+    "description": "Tabnine enhances developer productivity by providing context-aware completions and personalized suggestions. It works with most IDEs and offers team training based on your codebase.",
+    "website": "https://www.tabnine.com/",
+    "features": [
+      "Supports over 20+ programming languages",
+      "Private AI model trained on your team’s codebase",
+      "Offline mode for enterprises",
+      "Seamless IDE integration"
+    ],
+    "useCases": [
+      "Boosting team productivity with AI-assisted completions",
+      "Training AI on proprietary company code",
+      "Ensuring secure offline code generation"
+    ],
+    "pros": [
+      "Language-agnostic support",
+      "Customizable AI for teams",
+      "Enterprise-ready"
+    ],
+    "cons": [
+      "Not as deeply integrated with GitHub as Copilot",
+      "Advanced team features require enterprise plan"
+    ],
+    "seo": {
+      "title": "Tabnine – AI Code Completion for Every Language",
+      "keywords": [
+        "Tabnine",
+        "AI code completion",
+        "AI coding assistant",
+        "multi-language AI coding",
+        "Tabnine IDE"
+      ],
+      "metaDescription": "Tabnine is an AI-powered coding assistant supporting 20+ languages. Learn how it improves code quality and developer speed with personalized AI completions."
+    }
+  },
+  {
+    "id": 3,
+    "name": "Cursor",
+    "slug": "cursor",
+    "image": "/images/cursor3.png",
+    "shortDescription": "An AI-first code editor designed for collaboration.",
+    "description": "Cursor integrates AI directly into the editor, making it easy to generate new files, refactor existing code, and collaborate with AI in real-time.",
+    "website": "https://cursor.sh/",
+    "features": [
+      "AI-first collaborative code editor",
+      "Real-time AI-assisted code generation",
+      "Built-in refactoring and debugging tools",
+      "Supports multiple programming languages"
+    ],
+    "useCases": [
+      "Collaborating on code with AI and teammates",
+      "Generating new project files quickly",
+      "Refactoring codebases with AI support",
+      "Real-time debugging assistance"
+    ],
+    "pros": [
+      "Collaboration-focused",
+      "Fast AI integration",
+      "Great for team projects"
+    ],
+    "cons": [
+      "Newer tool with evolving ecosystem",
+      "Requires internet for AI features"
+    ],
+    "seo": {
+      "title": "Cursor – AI-First Code Editor for Teams",
+      "keywords": [
+        "Cursor",
+        "AI code editor",
+        "AI collaboration tool",
+        "AI programming",
+        "Cursor editor"
+      ],
+      "metaDescription": "Cursor is an AI-first collaborative code editor with real-time AI coding, refactoring, and debugging tools for teams and solo developers."
+    }
+  },
+  {
+    "id": 4,
+    "name": "Mintlify",
+    "slug": "mintlify",
+    "image": "/images/mintlify.png",
+    "shortDescription": "Automatically generate documentation from your code.",
+    "description": "Mintlify reduces the pain of writing documentation by analyzing your codebase and generating docs with explanations, examples, and references.",
+    "website": "https://mintlify.com/",
+    "features": [
+      "Auto-generates documentation from codebase",
+      "Provides explanations, examples, and references",
+      "Integrates with existing tools like GitHub",
+      "Improves code readability for teams"
+    ],
+    "useCases": [
+      "Creating API documentation automatically",
+      "Maintaining up-to-date developer docs",
+      "Onboarding new developers faster"
+    ],
+    "pros": [
+      "Saves time writing documentation",
+      "Easy integration with repos",
+      "Clear explanations with examples"
+    ],
+    "cons": [
+      "Best suited for well-structured code",
+      "Limited offline functionality"
+    ],
+    "seo": {
+      "title": "Mintlify – AI-Powered Documentation Generator",
+      "keywords": [
+        "Mintlify",
+        "AI documentation",
+        "auto-generate docs",
+        "developer documentation",
+        "AI code docs"
+      ],
+      "metaDescription": "Mintlify uses AI to automatically generate developer documentation from your codebase, making onboarding and code maintenance easier."
+    }
+  },
+  {
+    "id": 5,
+    "name": "Aider",
+    "slug": "aider",
+    "image": "/images/aider.png",
+    "shortDescription": "AI-assisted debugging and code reviews.",
+    "description": "Aider helps developers debug faster, find hidden issues, and improve code quality by running static analysis with AI-driven suggestions.",
+    "website": "https://aider.chat/",
+    "features": [
+      "AI-assisted debugging support",
+      "Automated code review suggestions",
+      "Detects hidden bugs and vulnerabilities",
+      "Improves code quality with best practices"
+    ],
+    "useCases": [
+      "Debugging errors in large codebases",
+      "Performing automated AI-driven code reviews",
+      "Improving maintainability with AI insights"
+    ],
+    "pros": [
+      "Faster debugging process",
+      "Helpful for large teams",
+      "Enhances code quality"
+    ],
+    "cons": [
+      "Still new and evolving",
+      "Relies on AI accuracy"
+    ],
+    "seo": {
+      "title": "Aider – AI Debugging and Code Review Assistant",
+      "keywords": [
+        "Aider",
+        "AI debugging",
+        "AI code review",
+        "AI bug fixing",
+        "code quality AI"
+      ],
+      "metaDescription": "Aider is an AI-powered debugging and code review tool that helps developers find bugs, improve code quality, and streamline reviews."
+    }
+  }
+]
