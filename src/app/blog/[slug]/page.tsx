@@ -10,13 +10,14 @@ function getReadingTime(text: string) {
   return Math.ceil(words / 200);
 }
 
-type Props = {
-  params: {
-    slug: string;
-  };
+// 👇 Define your own props type, don't call it PageProps
+type BlogPageProps = {
+  params: { slug: string };
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata(
+  { params }: BlogPageProps
+): Promise<Metadata> {
   const blog = blogs.find((b) => b.slug === params.slug);
 
   if (!blog) {
@@ -32,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function BlogPage({ params }: Props) {
+export default function BlogPage({ params }: BlogPageProps) {
   const blog = blogs.find((b) => b.slug === params.slug);
 
   if (!blog) return notFound();
@@ -59,7 +60,9 @@ export default function BlogPage({ params }: Props) {
       <p className="text-lg text-muted-foreground mb-8">{blog.excerpt}</p>
 
       <div className="prose prose-lg dark:prose-invert">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{blog.content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {blog.content}
+        </ReactMarkdown>
       </div>
     </article>
   );
