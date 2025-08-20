@@ -7,7 +7,7 @@ export default function HomePage() {
     <div>
       {/* Hero Section */}
       <section className="pt-16 text-center">
-        <h1 className="text-4xl font-bold sm:text-5xl">
+        <h1 className="font-bold text-5xl!">
           Discover the Future with <span className="text-primary">AI Blogs</span>
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">

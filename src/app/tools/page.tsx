@@ -1,46 +1,54 @@
+import Script from "next/script";
 import tools from "@/utils/tools.json";
-import Link from "next/link";
-import Image from "next/image";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import ToolsList from "@/components/ToolsList";
+
+// ✅ SEO Metadata
+export const metadata = {
+  title: "Top AI Tools 2025 | Best Artificial Intelligence Software",
+  description:
+    "Discover the best AI tools for productivity, automation, content creation, and more. Compare features, pros & cons, and explore detailed reviews of top AI software.",
+  keywords: [
+    "AI tools",
+    "best AI software",
+    "AI productivity apps",
+    "AI tools 2025",
+    "AI automation tools",
+  ],
+  openGraph: {
+    title: "Top AI Tools | Best Artificial Intelligence Software",
+    description:
+      "Explore the most powerful AI tools with features, pros, and cons.",
+    url: "https://yourdomain.com/tools",
+    type: "website",
+  },
+};
 
 export default function ToolsPage() {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-8 text-center">
-        Top AI Tools
-      </h1>
+    <>
+      {/* ✅ JSON-LD Structured Data for ItemList */}
+      <Script
+        id="tools-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Top AI Tools",
+            itemListElement: tools.map((tool, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              url: `https://yourdomain.com/tools/${tool.slug}`,
+              name: tool.name,
+              image: tool.image,
+              description: tool.shortDescription,
+            })),
+          }),
+        }}
+      />
 
-      <div className="grid md:grid-cols-3 gap-8">
-        {tools.map((tool) => (
-          <Card
-            key={tool.id}
-            className="rounded-2xl shadow-lg hover:shadow-xl transition-all"
-          >
-            <CardHeader>
-              <Image
-                src={tool.image}
-                alt={tool.name}
-                width={100}
-                height={100}
-                className="mx-auto mb-4"
-              />
-              <CardTitle className="text-xl text-center">{tool.name}</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-600 text-center mb-4">
-                {tool.shortDescription}
-              </p>
-              <div className="text-center">
-                <Link
-                  href={`/tools/${tool.slug}`}
-                  className="read_more_button">
-                  Read more →
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-    </div>
+      {/* ✅ Client component for search & list */}
+      <ToolsList tools={tools} />
+    </>
   );
 }

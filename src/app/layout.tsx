@@ -6,8 +6,8 @@ import SiteHeader from "@/components/site-header";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AI Hub",
-  description: "AI tools & automation blog",
+  title: "ThinkAI",
+  description: "AI Blogs and Tools Information",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

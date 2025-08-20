@@ -6,8 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import {
   NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -29,8 +27,8 @@ export default function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         {/* Brand */}
         <Link href="/" className="flex items-center gap-2 font-semibold text-xl">
-          <span className="rounded bg-foreground px-2 py-1 text-background">AI</span>
-          <span>Hub</span>
+          <span className="rounded bg-foreground px-2 py-1 text-background">Think</span>
+          <span>AI</span>
         </Link>
 
         {/* Desktop nav */}
@@ -54,14 +52,6 @@ export default function SiteHeader() {
               })}
             </NavigationMenuList>
           </NavigationMenu>
-
-          {/* <form action="/search" className="hidden lg:block">
-            <Input name="q" placeholder="Search AI tools or guides..." className="w-80" />
-          </form> */}
-
-          {/* <Button asChild>
-            <Link href="/submit">Submit a Tool</Link>
-          </Button> */}
         </div>
 
         {/* Mobile nav */}

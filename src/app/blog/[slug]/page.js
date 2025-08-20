@@ -1,11 +1,10 @@
 import blogs from "@/data/blogs.json";
 import { notFound } from "next/navigation";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import MarkdownRenderer from "@/components/MarkdownRenderer"; // 👈 naya wrapper
 
 // ✅ Reading time calculator
 function getReadingTime(text) {
-  const words = text.split(/\s+/).length;
+  const words = text.trim().split(/\s+/).length;
   return Math.ceil(words / 200);
 }
 
@@ -22,6 +21,18 @@ export async function generateMetadata({ params }) {
   return {
     title: `${blog.title} | AI Blogs`,
     description: blog.excerpt,
+    openGraph: {
+      title: blog.title,
+      description: blog.excerpt,
+      type: "article",
+      publishedTime: blog.date,
+      url: `https://yourdomain.com/blog/${blog.slug}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: blog.title,
+      description: blog.excerpt,
+    },
   };
 }
 
@@ -34,27 +45,27 @@ export default function BlogPage({ params }) {
 
   return (
     <article className="max-w-3xl mx-auto py-12 px-4">
-      <h1 className="text-4xl font-bold mb-2">{blog.title}</h1>
+      <header>
+        <h1 className="text-4xl font-bold mb-2">{blog.title}</h1>
 
-      <div className="text-sm text-muted-foreground mb-6">
-        Published on{" "}
-        <time dateTime={blog.date}>
-          {new Date(blog.date).toLocaleDateString("en-US", {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}
-        </time>{" "}
-        · {readingTime} min read
-      </div>
+        <div className="text-sm text-muted-foreground mb-6">
+          Published on{" "}
+          <time dateTime={new Date(blog.date).toISOString()}>
+            {new Date(blog.date).toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
+          </time>{" "}
+          · {readingTime} min read
+        </div>
+      </header>
 
       <p className="text-lg text-muted-foreground mb-8">{blog.excerpt}</p>
 
-      <div className="prose prose-lg dark:prose-invert">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>
-          {blog.content}
-        </ReactMarkdown>
-      </div>
+      <section className="prose prose-lg dark:prose-invert">
+        <MarkdownRenderer content={blog.content} />
+      </section>
     </article>
   );
 }
