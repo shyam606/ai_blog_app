@@ -24,9 +24,7 @@ export default function HomePage() {
       <section className="py-12 mt-5 max-w-5xl mx-auto">
         <h2 className="text-2xl font-semibold mb-6">Latest Blogs</h2>
         <div className="grid gap-6 md:grid-cols-2">
-          {blogs?.slice(0, 4)?.map((blog) => {
-            let url =
-              blog.slug === "top-5-ai-tools-2025" ? "/tools" : `/blog/${blog.slug}`;
+          {blogs?.slice(0, 6)?.map((blog) => {
             return (
               <div
                 key={blog?.id}
@@ -35,7 +33,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-semibold">{blog?.title}</h3>
                 <p className="mt-2 text-muted-foreground">{blog?.excerpt}</p>
                 <Link
-                  href={url}
+                  href={`blog/${blog.slug}`}
                   className="mt-4 read_more_button"
                 >
                   Read more →

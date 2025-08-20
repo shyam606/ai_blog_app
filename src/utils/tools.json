@@ -202,5 +202,366 @@
       ],
       "metaDescription": "Aider is an AI-powered debugging and code review tool that helps developers find bugs, improve code quality, and streamline reviews."
     }
+  },
+  {
+  "id": 6,
+  "name": "Replit AI",
+  "slug": "replit-ai",
+  "image": "/images/replit.png",
+  "shortDescription": "AI-powered coding assistant inside Replit.",
+  "description": "Replit AI helps developers code faster with autocomplete, debugging, and natural language to code conversion directly inside the Replit IDE.",
+  "website": "https://replit.com/",
+  "features": [
+    "AI-powered code completion",
+    "Natural language to code",
+    "Debugging and error fixing",
+    "Seamless integration with Replit IDE"
+  ],
+  "useCases": [
+    "Writing and debugging code faster",
+    "Learning programming with AI assistance",
+    "Building full-stack projects in Replit"
+  ],
+  "pros": [
+    "Beginner-friendly",
+    "Works directly in Replit IDE",
+    "Supports multiple languages"
+  ],
+  "cons": [
+    "Limited offline support",
+    "Best features require paid plan"
+  ],
+  "seo": {
+    "title": "Replit AI – AI-Powered Coding Assistant for Developers",
+    "keywords": [
+      "Replit AI",
+      "AI code assistant",
+      "AI programming",
+      "AI coding tool",
+      "AI autocomplete"
+    ],
+    "metaDescription": "Replit AI helps developers code, debug, and learn faster with AI-powered autocomplete and natural language to code features inside Replit IDE."
   }
+},
+{
+  "id": 7,
+  "name": "Blackbox AI",
+  "slug": "blackbox-ai",
+  "image": "/images/blackbox.png",
+  "shortDescription": "AI search engine for code snippets.",
+  "description": "Blackbox AI allows developers to find and use millions of code snippets with natural language search. It supports multiple programming languages and integrates with popular IDEs.",
+  "website": "https://www.useblackbox.io/",
+  "features": [
+    "AI-powered code search",
+    "Supports 100+ programming languages",
+    "Works with VS Code and JetBrains",
+    "Fast copy-paste integration"
+  ],
+  "useCases": [
+    "Finding reusable code snippets",
+    "Searching APIs and functions quickly",
+    "Boosting developer productivity"
+  ],
+  "pros": [
+    "Huge code database",
+    "Easy integration",
+    "Free version available"
+  ],
+  "cons": [
+    "Requires internet connection",
+    "Sometimes irrelevant results"
+  ],
+  "seo": {
+    "title": "Blackbox AI – AI Code Search Engine for Developers",
+    "keywords": [
+      "Blackbox AI",
+      "AI code search",
+      "AI coding assistant",
+      "AI developer tools",
+      "code snippets AI"
+    ],
+    "metaDescription": "Blackbox AI helps developers find and use code snippets faster with natural language AI search, supporting 100+ programming languages."
+  }
+},
+{
+  "id": 8,
+  "name": "Codeium",
+  "slug": "codeium",
+  "image": "/images/codeium.png",
+  "shortDescription": "Free AI code completion tool.",
+  "description": "Codeium is a free AI-powered autocomplete and code generation tool that supports over 70 languages. It integrates with major IDEs and helps developers write code faster.",
+  "website": "https://codeium.com/",
+  "features": [
+    "Supports 70+ languages",
+    "Free for individuals",
+    "Integrates with popular IDEs",
+    "Context-aware suggestions"
+  ],
+  "useCases": [
+    "Writing boilerplate code",
+    "Improving coding speed",
+    "Learning programming faster"
+  ],
+  "pros": [
+    "Completely free for personal use",
+    "Supports many languages",
+    "Cross-platform support"
+  ],
+  "cons": [
+    "Team features require payment",
+    "Not as advanced as GitHub Copilot"
+  ],
+  "seo": {
+    "title": "Codeium – Free AI Code Completion & Autocomplete Tool",
+    "keywords": [
+      "Codeium",
+      "free AI code assistant",
+      "AI autocomplete",
+      "AI programming tool",
+      "AI developer productivity"
+    ],
+    "metaDescription": "Codeium is a free AI-powered code completion tool for developers, supporting 70+ languages and IDEs to speed up coding."
+  }
+},
+{
+  "id": 9,
+  "name": "CodiumAI",
+  "slug": "codiumai",
+  "image": "/images/codiumai.webp",
+  "shortDescription": "AI test generation for developers.",
+  "description": "CodiumAI helps developers create meaningful test cases automatically with AI, ensuring code reliability and reducing bugs before deployment.",
+  "website": "https://www.codium.ai/",
+  "features": [
+    "AI-powered test generation",
+    "Supports Python, JavaScript, Java, and more",
+    "Works inside VS Code",
+    "Improves code reliability"
+  ],
+  "useCases": [
+    "Automating unit test creation",
+    "Improving software reliability",
+    "Reducing manual testing workload"
+  ],
+  "pros": [
+    "Saves testing time",
+    "Easy IDE integration",
+    "Supports multiple frameworks"
+  ],
+  "cons": [
+    "Limited language support",
+    "Still evolving tool"
+  ],
+  "seo": {
+    "title": "CodiumAI – AI Test Generation for Developers",
+    "keywords": [
+      "CodiumAI",
+      "AI test generation",
+      "AI unit testing",
+      "AI code testing",
+      "developer testing tools"
+    ],
+    "metaDescription": "CodiumAI generates automated test cases for developers using AI, improving reliability and reducing bugs in software projects."
+  }
+},
+{
+  "id": 10,
+  "name": "TabbyML",
+  "slug": "tabbyml",
+  "image": "/images/tabbyml.png",
+  "shortDescription": "Open-source GitHub Copilot alternative.",
+  "description": "TabbyML is an open-source AI code completion and assistant tool that works locally. It’s designed as a free, privacy-friendly alternative to GitHub Copilot.",
+  "website": "https://tabbyml.github.io/",
+  "features": [
+    "Open-source and self-hosted",
+    "Code completion and suggestions",
+    "Privacy-first (no data sharing)",
+    "Custom model training"
+  ],
+  "useCases": [
+    "Developers needing a free Copilot alternative",
+    "Privacy-focused coding environments",
+    "Custom AI coding workflows"
+  ],
+  "pros": [
+    "Open-source & free",
+    "Privacy-friendly",
+    "Customizable"
+  ],
+  "cons": [
+    "Setup requires technical knowledge",
+    "Smaller community compared to Copilot"
+  ],
+  "seo": {
+    "title": "TabbyML – Open Source AI Coding Assistant",
+    "keywords": [
+      "TabbyML",
+      "open-source AI coding",
+      "GitHub Copilot alternative",
+      "self-hosted AI assistant",
+      "AI programming tools"
+    ],
+    "metaDescription": "TabbyML is an open-source AI code assistant and Copilot alternative, offering privacy-first code completion and customization options."
+  }
+},
+{
+  "id": 11,
+  "name": "Copy AI",
+  "slug": "copy-ai",
+  "image": "/images/copy-ai.png",
+  "shortDescription": "AI tool for generating marketing copy and content.",
+  "description": "Copy AI helps marketers, businesses, and creators generate engaging written content. From blogs and ad copies to social media posts, it provides SEO-friendly text in seconds.",
+  "website": "https://www.copy.ai/",
+  "features": [
+    "AI-powered content generation",
+    "SEO-friendly text",
+    "Blog, ad, and social media copy",
+    "Multiple templates and tones"
+  ],
+  "useCases": [
+    "Marketers creating ad copy",
+    "Blog writers speeding up content writing",
+    "Social media managers generating captions"
+  ],
+  "pros": [
+    "Easy to use",
+    "Time-saving",
+    "Diverse templates"
+  ],
+  "cons": [
+    "Content may require manual editing",
+    "Limited originality in long-form writing"
+  ],
+  "seo": {
+    "title": "Copy AI – AI Writing Assistant for Marketing & Content",
+    "keywords": [
+      "Copy AI",
+      "AI writing tool",
+      "AI content generator",
+      "marketing copy AI",
+      "blog writing AI"
+    ],
+    "metaDescription": "Copy AI is an AI-powered writing assistant that helps generate marketing copy, blogs, and social media content with SEO-friendly text."
+  }
+},
+
+{
+  "id": 13,
+  "name": "Captions AI",
+  "slug": "captions-ai",
+  "image": "/images/captions-ai.jpeg",
+  "shortDescription": "AI video editing and caption generation tool.",
+  "description": "Captions AI automatically generates subtitles, translates text, and edits video content, making it easier for creators to reach global audiences.",
+  "website": "https://captions.ai/",
+  "features": [
+    "Automatic caption generation",
+    "Video editing tools",
+    "AI translation",
+    "Subtitle styling options"
+  ],
+  "useCases": [
+    "Content creators needing subtitles",
+    "Businesses creating global video content",
+    "Educators adding captions to tutorials"
+  ],
+  "pros": [
+    "Highly accurate captions",
+    "Time-saving automation",
+    "Supports multiple languages"
+  ],
+  "cons": [
+    "Free version has limitations",
+    "Editing options not as advanced as pro tools"
+  ],
+  "seo": {
+    "title": "Captions AI – Smart Video Captioning & Editing Tool",
+    "keywords": [
+      "Captions AI",
+      "AI subtitles generator",
+      "video captioning AI",
+      "AI translation for videos",
+      "automatic video captions"
+    ],
+    "metaDescription": "Captions AI is a smart video editing tool that generates subtitles, translations, and captions, making video content more accessible."
+  }
+},
+{
+  "id": 14,
+  "name": "Perplexity AI",
+  "slug": "perplexity-ai",
+  "image": "/images/perplexity-ai.png",
+  "shortDescription": "AI-powered research and knowledge assistant.",
+  "description": "Perplexity AI helps students, researchers, and professionals get reliable information instantly with cited sources, improving productivity and decision-making.",
+  "website": "https://www.perplexity.ai/",
+  "features": [
+    "AI-powered question answering",
+    "Cited sources with responses",
+    "Conversational interface",
+    "Research assistance"
+  ],
+  "useCases": [
+    "Students researching assignments",
+    "Professionals fact-checking quickly",
+    "Writers collecting information"
+  ],
+  "pros": [
+    "Provides citations",
+    "Fast and accurate",
+    "Great for research"
+  ],
+  "cons": [
+    "Dependent on AI’s training data",
+    "Sometimes limited in-depth analysis"
+  ],
+  "seo": {
+    "title": "Perplexity AI – AI Research & Knowledge Assistant",
+    "keywords": [
+      "Perplexity AI",
+      "AI research assistant",
+      "AI question answering",
+      "AI with citations",
+      "knowledge assistant AI"
+    ],
+    "metaDescription": "Perplexity AI is an advanced AI research assistant that delivers precise answers with sources, perfect for students and professionals."
+  }
+},
+{
+  "id": 15,
+  "name": "Tido AI",
+  "slug": "tido-ai",
+  "image": "/images/tido-ai.png",
+  "shortDescription": "AI productivity and workflow automation tool.",
+  "description": "Tido AI integrates with workflows to automate repetitive tasks, schedule activities, and streamline project management for businesses and individuals.",
+  "website": "https://tido.ai/",
+  "features": [
+    "Task automation",
+    "AI-based scheduling",
+    "Workflow management",
+    "Integration with apps"
+  ],
+  "useCases": [
+    "Businesses automating workflows",
+    "Teams managing projects",
+    "Individuals organizing tasks"
+  ],
+  "pros": [
+    "Boosts productivity",
+    "Easy integration",
+    "Saves time"
+  ],
+  "cons": [
+    "Requires setup",
+    "Premium plan needed for advanced features"
+  ],
+  "seo": {
+    "title": "Tido AI – Workflow Automation & Productivity Assistant",
+    "keywords": [
+      "Tido AI",
+      "AI productivity tool",
+      "workflow automation AI",
+      "AI project management",
+      "task automation AI"
+    ],
+    "metaDescription": "Tido AI is a productivity-focused tool that automates workflows, tasks, and scheduling to help businesses and individuals save time."
+  }
+}
 ]

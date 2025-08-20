@@ -48,6 +48,13 @@ export default function ToolDetail({ params }) {
         />
         <h1 className="text-4xl font-bold mb-4">{tool.name}</h1>
         <p className="text-lg text-gray-700 mb-6">{tool.description}</p>
+
+        {/* ✅ Official Website Link */}
+        {tool.website && (
+          <Link href={tool.website} className="mt-4 inline-block text-blue-600 font-medium hover:underline">
+            🌐 Visit Official Website →
+          </Link>
+        )}
       </div>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">✨ Key Features</h2>
