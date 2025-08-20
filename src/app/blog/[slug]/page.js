@@ -15,12 +15,18 @@ export async function generateMetadata({ params }) {
     return {
       title: "Blog Not Found | AI Blogs",
       description: "The blog you are looking for does not exist.",
+      keywords: ["AI blogs", "Blog not found"],
     };
   }
+
+  // Example: derive keywords from blog.tags or split blog.excerpt
+  const keywords = blog.tags || blog.excerpt.split(" ").slice(0, 10); // take first 10 words as fallback
+console.log('keywords',keywords);
 
   return {
     title: `${blog.title} | AI Blogs`,
     description: blog.excerpt,
+    keywords: keywords,
     openGraph: {
       title: blog.title,
       description: blog.excerpt,
@@ -35,6 +41,7 @@ export async function generateMetadata({ params }) {
     },
   };
 }
+
 
 export default function BlogPage({ params }) {
   const blog = blogs.find((b) => b.slug === params.slug);
