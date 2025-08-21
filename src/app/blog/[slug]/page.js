@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
 
   // Example: derive keywords from blog.tags or split blog.excerpt
   const keywords = blog.tags || blog.excerpt.split(" ").slice(0, 10); // take first 10 words as fallback
-console.log('keywords',keywords);
+  console.log('keywords', keywords);
 
   return {
     title: `${blog.title} | AI Blogs`,
@@ -71,7 +71,8 @@ export default function BlogPage({ params }) {
       <p className="text-lg text-muted-foreground mb-8">{blog.excerpt}</p>
 
       <section className="prose prose-lg dark:prose-invert">
-        <MarkdownRenderer content={blog.content} />
+        {/* <MarkdownRenderer content={blog.content} /> */}
+        <div dangerouslySetInnerHTML={{ __html: blog.content }} />
       </section>
     </article>
   );
